@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ageCalculator</title>
+</head>
+<body>
+    
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>    
+        <!-- mobile responsive meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        <!-- ** Plugins Needed for the Project ** -->
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+        <!-- slick slider -->
+        <link rel="stylesheet" href="plugins/slick/slick.css">
+        <!-- themefy-icon -->
+        <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+        <!-- animation css -->
+        <link rel="stylesheet" href="plugins/animate/animate.css">
+        <!-- aos -->
+        <link rel="stylesheet" href="plugins/aos/aos.css">
+        <!-- venobox popup -->
+        <link rel="stylesheet" href="plugins/venobox/venobox.css">
+
+        <!-- Main Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        
+        <!--Favicon-->
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>    
+    <section class="header">
+        <div class="container-fluid bg-secondary">
+            <div class="container">
+                <div class="row py-1">
+                    <div class="col-md-3">
+                        <h4 class="text-info">CYCAM</h4>
+                    </div>
+                    <div class="col-md-9">
+                        <h5 class="text-primary text-right mr-3">Age Calculator</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="welcome">
+        <div id="welcome">
+
+        </div>
+    </section>
+
+    <section id="calc">
+        <div class="jumbotron text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-sm-10">                        
+                        <div class="container-fluid">
+                            <h6 class="text-primary">My Age</h6>
+                            <div class="card bg-secondary">
+                                <div class="card-body py-3 m-auto">
+                                    <div class="row">
+                                        <div class="col-6 text-left">
+                                            <button class="btn btn-sm btn-primary" href="#" data-toggle="modal" data-target="#addEvent">Click</button>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <button id="reset" class="btn btn-sm btn-danger">Reset</button>
+                                        </div>       
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-12">
+                                            <div id="response"class="container bg-primary mt-4">
+                                                <div id="yourName"></div>
+                                                <div id="age"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      
+    <div class="modal fade" id="addEvent" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm" >
+            <div class="modal-content rounded-1 border-0 py3">
+                <div class="modal-header border-0">
+                    <h5 class="text-center"><a class="h6 text-primary font-secondary" href="@@page-link">My details</a></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form">
+                        <form id="details">
+                            <div class="mt-0">
+                                <label for="name"><b>Full name</b></label>
+                                <input id="name" type="text" name="name" class="form-control"style="height: 40px;" placeholder="Name">
+                            </div>
+                            <div class="mt-2">
+                                <label for="DOB"><b>Date of birth</b></label>
+                                <input id="dob" type="date" name="dob" class="form-control"style="height: 40px;">
+                            </div>
+                            <div class="mt-3">
+                                <button id="submit" class="btn btn-block btn-sm btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- jQuery -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <!-- aos -->
+    <script src="plugins/aos/aos.js"></script>
+    <!-- venobox popup -->
+    <script src="plugins/venobox/venobox.min.js"></script>
+    <!-- mixitup filter -->
+    <script src="plugins/mixitup/mixitup.min.js"></script>
+    <!-- google map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+    <script src="plugins/google-map/gmap.js"></script>
+
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
+
+    <!-- js -->    
+    <script src="js/app.js"></script>
+  </body>
+</html>
